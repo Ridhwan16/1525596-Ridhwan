@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -11,9 +11,24 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <div id="wrapper">
+            <div id ="banner">
+
+            </div>
+            <div id ="navigation">
+                <ul id ="nav">
+                    <li><asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink2" runat="server">About Us</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink></li>
+                </ul>
+            </div>
+            <div id ="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
     </div>
     </form>
 </body>
