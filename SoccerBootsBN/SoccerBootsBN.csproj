@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="JavaScript.js" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
@@ -104,6 +105,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
+    <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
