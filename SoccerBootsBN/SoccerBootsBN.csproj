@@ -67,11 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="JavaScript.js" />
-    <Content Include="js\jquery-1.11.3.min.js" />
-    <Content Include="js\jssor.slider-23.0.0.debug.js" />
-    <Content Include="js\jssor.slider-23.0.0.min.js" />
-    <Content Include="js\jssor.slider-23.0.0.mini.js" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
