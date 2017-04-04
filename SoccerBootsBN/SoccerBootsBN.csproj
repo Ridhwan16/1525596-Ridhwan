@@ -66,9 +66,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\bannername.jpg" />
     <Content Include="Default.aspx" />
+    <Content Include="img\01.jpg" />
+    <Content Include="img\02.jpg" />
+    <Content Include="img\03.jpg" />
+    <Content Include="img\04.jpg" />
+    <Content Include="img\a17.png" />
     <Content Include="img\banner1.jpg" />
-    <Content Include="JavaScript.js" />
+    <Content Include="img\homepage.jpg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jssor.slider-23.0.0.debug.js" />
+    <Content Include="js\jssor.slider-23.0.0.min.js" />
+    <Content Include="js\jssor.slider-23.0.0.mini.js" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
@@ -106,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

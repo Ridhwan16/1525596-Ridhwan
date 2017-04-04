@@ -5,10 +5,11 @@
 <html>
 <head runat="server">
     <title></title>
-    <script src="js/jssor.slider-23.0.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
     <link href="StyleSheet/Site_Style.css" rel="stylesheet" />
-    <link href="StyleSheet.css" rel="stylesheet" />
-    <script src="JavaScript.js"></script>
+    <link href="StyleSheet/Banner_Style.css" rel="stylesheet" />
+    <script src="js/JavaScript.js" type="text/javascript"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -19,19 +20,19 @@
         <div id="wrapper">
             <div id ="banner">
                  
-                 <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+                 <div id="jssor_1" >
         <!-- Loading Screen -->
-        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        <div id="bootsload" data-u="loading" >
+            <div id="bootsfilter"></div>
+            <div id="bootsposition"></div>
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+        <div id="bootsslides" data-u="slides">
             <div>
-                <img data-u="image" src="img/banner1.jpg" />
+                <img data-u="image" src="img/bannername.jpg" />
                 <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
             </div>
             <div>
-                <img data-u="image" src="img/02.jpg" />
+                <img data-u="image" src="img/banner1.jpg" />
                 <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
             </div>
             <div>
@@ -45,8 +46,8 @@
             </div>
         </div>
         <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
-            <div style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;filter:alpha(opacity=40.0);opacity:0.4;"></div>
+        <div data-u="thumbnavigator" class="jssort09-600-45" >
+            <div id="bootsposition2" ></div>
             <!-- Thumbnail Item Skin Begin -->
             <div data-u="slides" style="cursor: default;">
                 <div data-u="prototype" class="p">
@@ -56,25 +57,30 @@
             <!-- Thumbnail Item Skin End -->
         </div>
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+        <div data-u="navigator" class="jssorb01" >
             <div data-u="prototype" style="width:12px;height:12px;"></div>
         </div>
         <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+        <span data-u="arrowleft" class="jssora05l" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" data-autocenter="2"></span>
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->
 
             </div>
-            <div id ="navigation">
-                <ul id ="nav">
-                    <li><asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="HyperLink2" runat="server">About Us</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="HyperLink3" runat="server">Brands</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink></li>
-                </ul>
-            </div>
+            <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li class="brandDD">
+                        <a href="javascript:void(0)" class="buttonDD">Brands</a>
+                        <div class="brand-types">
+                            <a href="#">Nike</a>
+                            <a href="#">Addidas</a>
+                            <a href="#">Puma</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+            </ul>
             <div id ="content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">        
                 </asp:ContentPlaceHolder>
@@ -82,6 +88,13 @@
         </div>
 
     </div>
+        <footer id="footer">
+            <p>Copyright &copy; Ridhwan Mostapa | 1525596 </p> 
+            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> ||
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> ||
+            <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
+
+        </footer>
     </form>
 </body>
 </html>

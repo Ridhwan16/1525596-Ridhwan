@@ -3,6 +3,10 @@
 .jssorb01 {
             position: absolute;
         }
+        .jssorb01{
+            bottom:16px;
+            right:16px;
+        }
         .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
             position: absolute;
             /* size of bullet elment */
@@ -40,8 +44,18 @@
             background: url('../img/a17.png') no-repeat;
             overflow: hidden;
         }
-        .jssora05l { background-position: -10px -40px; }
-        .jssora05r { background-position: -70px -40px; }
+        .jssora05l { background-position: -10px -40px;
+                     top:0px;
+                     left:8px;
+                     width:40px;
+                     height:40px;
+        }
+        .jssora05r { background-position: -70px -40px;
+                     top:0px;
+                     right:8px;
+                     width:40px;
+                     height:40px;
+        }
         .jssora05l:hover { background-position: -130px -40px; }
         .jssora05r:hover { background-position: -190px -40px; }
         .jssora05l.jssora05ldn { background-position: -250px -40px; }
@@ -52,6 +66,11 @@
         .jssora05r.jssora05rds { background-position: -70px -40px; 
                                  opacity: .3; 
                                  pointer-events: none; }
+       .jssort09-600-45        { position:absolute;
+                                 bottom:0px;
+                                 left:0px;
+                                 width:600px;
+                                 height:45px; }
         .jssort09-600-45 .p {    position: absolute;    
                                  top: 0;    
                                  left: 0;    
@@ -68,7 +87,9 @@
                                  line-height: 45px;    
                                  font-size: 20px;    
                                  padding-left: 10px;}
-.mainJss{
+
+
+#jssor_1 {
     position:relative;
     margin:0 auto;
     top:0px;
@@ -79,22 +100,35 @@
     visibility:hidden;
 }
 
-.loadingJss{
+#bootsload{
     position:absolute;
     top:0px;
     left:0px;
     background-color:rgba(0,0,0,0.7);
-
-    filter: alpha(opacity=70); 
-    opacity: 0.7; 
-    position: absolute;
-    display: block; 
-    width: 100%; 
-    height: 100%;
-    background:url('img/loading.gif') no-repeat center center;
 }
 
-.slidesJss{
+#bootsfilter{
+    filter: alpha(opacity=70);
+    opacity: 0.7; 
+    position: absolute;
+    display: block;
+    top: 0px; 
+    left: 0px;
+    width: 100%; 
+    height: 100%;
+}
+
+#bootsposition{
+    position:absolute;
+    display:block;
+    background:url('img/loading.gif') no-repeat center center;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+#bootsslides{
     cursor:default;
     position:relative;
     top:0px;
@@ -104,14 +138,10 @@
     overflow:hidden;
 }
 
-.tumbJss{
+#bootsposition2{
     position:absolute;
-    bottom:0px;
-    left:0px;
-    width:600px;
-    height:45px;
-
     top:0;
+    left:0;
     width:100%;
     height:100%;
     background-color:#000;
