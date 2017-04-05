@@ -9,7 +9,7 @@
         $AutoPlay: 1,
         $SlideshowOptions: {
             $Class: $JssorSlideshowRunner$,
-            $Transitions: jssor_1_SlideshowTransitions,
+            $Transitions: $JssorSlideshowRunner$,
             $TransitionsOrder: 1
         },
         $ArrowNavigatorOptions: {

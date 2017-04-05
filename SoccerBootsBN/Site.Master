@@ -79,7 +79,7 @@
                             <a href="#">Puma</a>
                         </div>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Contact.aspx">Contact</a></li>
             </ul>
             <div id ="content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">        
