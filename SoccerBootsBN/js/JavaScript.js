@@ -33,7 +33,7 @@
     /*function ScaleSlider() {
         var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
         if (refSize) {
-            refSize = Math.min(refSize, 1000,200);
+            refSize = Math.min(refSize, 1100);
             jssor_1_slider.$ScaleWidth(refSize);
         }
         else {

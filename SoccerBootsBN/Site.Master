@@ -28,20 +28,23 @@
         </div>
         <div id="bootsslides" data-u="slides">
             <div>
-                <img data-u="image" src="img/bannername.jpg" />
+                <img src="img/bannername.jpg" />
                 <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
             </div>
             <div>
-                <img data-u="image" src="img/banner1.jpg" />
+                <%--<img data-u="image" src="img/banner1.jpg" />--%>
+                <img src="img/banner1.jpg" />
                 <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
             </div>
             <div>
-                <img data-u="image" src="img/03.jpg" />
+                <%--<img data-u="image" src="img/03.jpg" />--%>
+                <img src="img/03.jpg" />
                 <div data-u="thumb">Do you notice navigator responses when drag?</div>
             </div>
-            <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Slider</a>
+            <a data-u="any" href="http://www.youtube.com" style="display:none">Banner Slider</a>
             <div>
-                <img data-u="image" src="img/04.jpg" />
+                <%--<img data-u="image" src="img/04.jpg" />--%>
+                <img src="img/04.jpg" />
                 <div data-u="thumb">Do you notice arrow responses when click?</div>
             </div>
         </div>
