@@ -16,20 +16,20 @@ namespace SoccerBootsBN
             {
                 if (Page.IsValid)
                 {
-                    MailMessage mailmessage = new MailMessage();
-                    mailmessage.From = new MailAddress(TextEmail.Text);
-                    mailmessage.To.Add("kasutbolabrunei@gmail.com");
-                    mailmessage.Subject = TextSubject.Text;
+                    MailMessage gmailmessage = new MailMessage();
+                    gmailmessage.From = new MailAddress(TextEmail.Text);
+                    gmailmessage.To.Add("kasutbolabrunei@gmail.com");
+                    gmailmessage.Subject = TextSubject.Text;
 
-                    mailmessage.Body = "<b>Sender Name : </b>" + TextName.Text + "<br/>"
+                    gmailmessage.Body = "<b>Sender Name : </b>" + TextName.Text + "<br/>"
                         + "<b>Sender's Email : </b>" + TextEmail.Text + "<br/>"
                         + "<b>Comments : </b>" + TextComment.Text ;
-                    mailmessage.IsBodyHtml = true;
+                    gmailmessage.IsBodyHtml = true;
 
-                    SmtpClient smtpClient = new SmtpClient("Smtp.gmail.com", 587);
-                    smtpClient.EnableSsl = true;
-                    smtpClient.Credentials = new System.Net.NetworkCredential("kasutbolabrunei@gmail.com", "kasutbola123");
-                    smtpClient.Send(mailmessage);
+                    SmtpClient mainClient = new SmtpClient("Smtp.gmail.com", 587);
+                    mainClient.EnableSsl = true;
+                    mainClient.Credentials = new System.Net.NetworkCredential("kasutbolabrunei@gmail.com", "kasutbola123");
+                    mainClient.Send(gmailmessage);
 
                     Label1.ForeColor = System.Drawing.Color.Blue;
                     Label1.Text = "Thank you for contacting us";
