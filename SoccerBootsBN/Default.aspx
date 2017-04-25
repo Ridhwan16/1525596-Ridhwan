@@ -72,22 +72,23 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
             <div>
                 <img data-u="image" src="img/01.jpg" />
-                <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
-            </div>
-            <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Slider</a>
+                <div data-u="thumb">Nike</div>
+                <%--image taken from https://www.netolocker.net/--%>
+                </div>
             <div>
+          
                 <img data-u="image" src="img/02.jpg" />
-                <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
+                <div data-u="thumb">Adidas</div>
+                <%--image taken from https://www.netolocker.net/--%>
             </div>
             <div>
                 <img data-u="image" src="img/03.jpg" />
-                <div data-u="thumb">Do you notice navigator responses when drag?</div>
+                <div data-u="thumb">Puma</div>
+                <%--image taken from https://www.unisportstore.com --%>
             </div>
-            <div>
-                <img data-u="image" src="img/04.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
+            
         </div>
+ 
         <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
             <div style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;filter:alpha(opacity=40.0);opacity:0.4;"></div>

@@ -10,42 +10,41 @@ namespace SoccerBootsBN
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void SbmtGmailBtn_Click(object sender, EventArgs e)
         {
             try
             {
                 if (Page.IsValid)
                 {
-                    MailMessage gmailmessage = new MailMessage();
-                    gmailmessage.From = new MailAddress(TextEmail.Text);
-                    gmailmessage.To.Add("kasutbolabrunei@gmail.com");
-                    gmailmessage.Subject = TextSubject.Text;
-
-                    gmailmessage.Body = "<b>Sender Name : </b>" + TextName.Text + "<br/>"
+                    MailMessage gmailmessages = new MailMessage();
+                    gmailmessages.From = new MailAddress(TextEmail.Text);
+                    gmailmessages.To.Add("kasutbolabrunei@gmail.com");
+                    gmailmessages.Subject = TextSubject.Text;
+                    gmailmessages.Body = "<b>Sender Name : </b>" + TextName.Text + "<br/>"
                         + "<b>Sender's Email : </b>" + TextEmail.Text + "<br/>"
                         + "<b>Comments : </b>" + TextComment.Text ;
-                    gmailmessage.IsBodyHtml = true;
+                    gmailmessages.IsBodyHtml = true;
 
                     SmtpClient mainClient = new SmtpClient("Smtp.gmail.com", 587);
                     mainClient.EnableSsl = true;
                     mainClient.Credentials = new System.Net.NetworkCredential("kasutbolabrunei@gmail.com", "kasutbola123");
-                    mainClient.Send(gmailmessage);
+                    mainClient.Send(gmailmessages);
 
-                    Label1.ForeColor = System.Drawing.Color.Blue;
-                    Label1.Text = "Thank you for contacting us";
+                    NotesLabel.ForeColor = System.Drawing.Color.Blue;
+                    NotesLabel.Text = "Thank you for contacting us";
 
                     TextName.Enabled = false;
                     TextEmail.Enabled = false;
                     TextComment.Enabled = false;
                     TextSubject.Enabled = false;
-                    Button1.Enabled = false;
+                    SbmtGmailBtn.Enabled = false;
                 }
             }
             catch(Exception ex)
             {
-                Label1.ForeColor = System.Drawing.Color.Blue;
-                Label1.ForeColor = System.Drawing.Color.Red;
-                Label1.Text = "There is something wrong with the server. Please try again later";
+                NotesLabel.ForeColor = System.Drawing.Color.Blue;
+                NotesLabel.ForeColor = System.Drawing.Color.Red;
+                NotesLabel.Text = "There is something wrong with the server. Please try again later";
             }
 
 

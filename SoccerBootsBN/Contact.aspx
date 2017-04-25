@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="SoccerBootsBN.contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <link href="StyleSheet/Contact.css" rel="stylesheet" />
+    <link href="StyleSheet/Contact.css" rel="stylesheet" type="text/css" />
+    <%--source taken from https://www.youtube.com/watch?v=ngldKCSXA6U and https://www.youtube.com/watch?v=Fw1X7HLZfos--%>
     <div id ="left">
         <fieldset>
             <legend>Contact Us</legend>
@@ -95,12 +96,12 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Label ID="Label1" runat="server" Font-Bold="true"></asp:Label>
+                        <asp:Label ID="NotesLabel" runat="server" Font-Bold="True"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+                        <asp:Button ID="SbmtGmailBtn" runat="server" Text="Submit" OnClick="SbmtGmailBtn_Click" />
                     </td>
                 </tr>
             </table>
