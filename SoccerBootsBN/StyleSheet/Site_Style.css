@@ -1,18 +1,21 @@
 ﻿#banner {
-    width: 1100px;
-    height:100px;
+    width: 100%; 
+   /*-moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    overflow: hidden;*/
 }
  
 #wrapper{
-    height:100px;
-    width: 1100px;
+    width: 100%;
     margin: auto;
     padding-bottom: 20px;
     background-color:white;
+    
 }
 
 
- ul{
+#nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,11 +24,11 @@
 }
 
 
-li{
+#nav li{
     float:left;
 }
 
-li a {
+#nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,15 +36,15 @@ li a {
     text-decoration: none;
 }
 
-li a:hover, .brandDD:hover .buttonDD{
+#nav li a:hover, .brandDD:hover .buttonDD{
     background-color: #111;
 }
 
-li.brandDD {
+#nav li.brandDD {
     display: inline-block;
 }
 
-.brand-types {
+#nav .brand-types {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -50,7 +53,7 @@ li.brandDD {
     z-index: 1;
 }
 
-.brand-types a {
+#nav .brand-types a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -58,9 +61,9 @@ li.brandDD {
     text-align: left;
 }
 
-.brand-types a:hover {background-color: #f1f1f1}
+#nav .brand-types a:hover {background-color: #f1f1f1}
 
-.brandDD:hover .brand-types {
+#nav .brandDD:hover .brand-types {
     display: block;
 }
 

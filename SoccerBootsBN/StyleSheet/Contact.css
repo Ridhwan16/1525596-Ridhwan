@@ -1,0 +1,24 @@
+﻿body {
+}
+#left {
+    float:left;
+    font-family:Arial;
+    align-content:center;
+    padding-left:70px;
+    padding-top:50px;
+}
+#left fieldset{
+    width:350px;
+}
+#right {
+    float:right;
+    padding-right: 100px;
+    text-align:left; 
+
+}
+
+#right iframe{
+    width: 400px;
+    height: 300px;
+    
+}

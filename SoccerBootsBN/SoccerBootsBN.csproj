@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contact.aspx" />
+    <Content Include="img\bannerlogo.jpg" />
     <Content Include="img\bannername.jpg" />
     <Content Include="Default.aspx" />
     <Content Include="img\01.jpg" />
@@ -77,6 +78,7 @@
     <Content Include="img\banner1.jpg" />
     <Content Include="img\homepage.jpg" />
     <Content Include="img\loading.gif" />
+    <Content Include="img\SBBNBanner.jpg" />
     <Content Include="js\JavaScript.js" />
     <Content Include="js\jquery-1.11.3.min.js" />
     <Content Include="js\jssor.slider-23.0.0.debug.js" />
@@ -94,6 +96,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="StyleSheet\Banner_Style.css" />
+    <Content Include="StyleSheet\Contact.css" />
     <Content Include="StyleSheet\Site_Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>

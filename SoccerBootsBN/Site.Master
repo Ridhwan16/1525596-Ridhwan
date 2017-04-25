@@ -4,13 +4,9 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
+    <title>SoccerBootsBn</title>
     <link href="StyleSheet/Site_Style.css" rel="stylesheet" />
-    <link href="StyleSheet/Banner_Style.css" rel="stylesheet" />
-    <script src="js/JavaScript.js" type="text/javascript"></script>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder ID="content1" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -18,60 +14,11 @@
     <form id="form1" runat="server">
     <div>
         <div id="wrapper">
-            <div id ="banner">
-                 
-                 <div id="jssor_1" >
-        <!-- Loading Screen -->
-        <div id="bootsload" data-u="loading" >
-            <div id="bootsfilter"></div>
-            <div id="bootsposition"></div>
-        </div>
-        <div id="bootsslides" data-u="slides">
-            <div>
-                <img src="img/bannername.jpg" />
-                <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
+            <div id="banner">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/SBBNBanner.jpg" />
             </div>
-            <div>
-                <%--<img data-u="image" src="img/banner1.jpg" />--%>
-                <img src="img/banner1.jpg" />
-                <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
-            </div>
-            <div>
-                <%--<img data-u="image" src="img/03.jpg" />--%>
-                <img src="img/03.jpg" />
-                <div data-u="thumb">Do you notice navigator responses when drag?</div>
-            </div>
-            <a data-u="any" href="http://www.youtube.com" style="display:none">Banner Slider</a>
-            <div>
-                <%--<img data-u="image" src="img/04.jpg" />--%>
-                <img src="img/04.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort09-600-45" >
-            <div id="bootsposition2" ></div>
-            <!-- Thumbnail Item Skin Begin -->
-            <div data-u="slides" style="cursor: default;">
-                <div data-u="prototype" class="p">
-                    <div data-u="thumbnailtemplate" class="t"></div>
-                </div>
-            </div>
-            <!-- Thumbnail Item Skin End -->
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb01" >
-            <div data-u="prototype" style="width:12px;height:12px;"></div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora05r" data-autocenter="2"></span>
-    </div>
-    <script type="text/javascript">jssor_1_slider_init();</script>
-    <!-- #endregion Jssor Slider End -->
-
-            </div>
-            <ul>
+            <div id="nav">
+                <ul>
                     <li><a href="Default.aspx">Home</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li class="brandDD">
@@ -84,20 +31,30 @@
                     </li>
                     <li><a href="Contact.aspx">Contact</a></li>
             </ul>
-            <div id ="content">
+            </div>
+            <div id="content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">        
                 </asp:ContentPlaceHolder>
+        </div>        
             </div>
-        </div>
-
-    </div>
-        <footer id="footer">
+            <footer id="footer">
             <p>Copyright &copy; Ridhwan Mostapa | 1525596 </p> 
             <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> ||
             <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> ||
             <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
 
-        </footer>
+            </footer>
+        
+
+    </div>
+
+            
+            
+           
+        
+
+    
+        
     </form>
 </body>
 </html>
