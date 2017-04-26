@@ -1,8 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SoccerBootsBN.Site" %>
 
 <!DOCTYPE html>
-<%--Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs--%>
-<html>
+<html xml:lang="en" lang="en">
+<!--Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs-->
+
 <head runat="server">
     <title>SoccerBootsBn</title>
     <link href="StyleSheet/Site_Style.css" rel="stylesheet" />
@@ -15,7 +16,7 @@
     <div>
         <div id="wrapper">
         <div id="banner">
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/SBBNBanner.jpg" />
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/SBBNBanner.jpg"  AlternateText="banner image" />
         </div>     
           
         <div id="nav">

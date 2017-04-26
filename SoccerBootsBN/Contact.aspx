@@ -2,14 +2,14 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <link href="StyleSheet/Contact.css" rel="stylesheet" type="text/css" />
-    <%--source taken from https://www.youtube.com/watch?v=ngldKCSXA6U and https://www.youtube.com/watch?v=Fw1X7HLZfos--%>
+    <!--source taken from https://www.youtube.com/watch?v=ngldKCSXA6U and https://www.youtube.com/watch?v=Fw1X7HLZfos-->
     <div id ="left">
         <fieldset>
             <legend>Contact Us</legend>
-            <table>
+            <table id="bold">
                 <tr>
                     <td>
-                        <b>Name:</b>
+                        <div>Name:</div>
                     </td>
                     <td>
                         <asp:TextBox ID="TextName" width="200px" runat="server"></asp:TextBox>
@@ -17,7 +17,7 @@
                     <td>
                        
                         <asp:RequiredFieldValidator 
-                            ID="RequiredFieldValidator1" 
+                            ID="RequiredFieldValidator1"
                             runat="server" 
                             ErrorMessage="Name field must be inserted"
                             ControlToValidate="TextName"
@@ -27,14 +27,14 @@
                     </td>
                     <tr>
                     <td>
-                        <b>Email:</b>
+                        <div>Email:</div>
                     </td>
                     <td>
                         <asp:TextBox ID="TextEmail" width="200px" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator 
-                            ID="RequiredFieldValidator2" 
+                            ID="RequiredFieldValidator2"                             
                             runat="server" 
                             ErrorMessage="Email field must be inserted"
                             ControlToValidate="TextEmail"
@@ -42,7 +42,8 @@
                             Text="*"
                             ForeColor="Red">
                         </asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" 
+                        <asp:RegularExpressionValidator 
+                            ID="RegularExpressionValidator1" 
                             runat="server" 
                             ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                             ErrorMessage="Invalid Email Format" 
@@ -55,14 +56,14 @@
                 </tr>
                 <tr>
                 <td>
-                        <b>Subject:</b>
+                        <div>Subject:</div>
                     </td>
                     <td>
                         <asp:TextBox ID="TextSubject" width="200px" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator 
-                            ID="RequiredFieldValidator3" 
+                            ID="RequiredFieldValidator3"
                             runat="server" 
                             ErrorMessage="Subject field must be inserted"
                             ControlToValidate="TextSubject"
@@ -73,14 +74,14 @@
                  </tr>
                 <tr>
                 <td style="vertical-align:top">
-                        <b>Comments:</b>
+                        <div>Comments:</div>
                     </td>
                     <td style="vertical-align:top">
                         <asp:TextBox ID="TextComment" width="200px" runat="server" Rows="5" TextMode="MultiLine"></asp:TextBox>
                     </td>
                     <td style="vertical-align:top">
                         <asp:RequiredFieldValidator 
-                            ID="RequiredFieldValidator4" 
+                            ID="RequiredFieldValidator4"
                             runat="server" 
                             ErrorMessage="Comments field must be inserted"
                             ControlToValidate="TextComment"

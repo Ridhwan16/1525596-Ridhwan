@@ -1,8 +1,7 @@
 ﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SoccerBootsBN.Default" %>
-<%--<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>--%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-  <%--<body style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">--%>
+  
 
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Maker -->
@@ -12,56 +11,7 @@
     <script src="js/jssor.slider-23.0.0.mini.js" type="text/javascript"></script>
     <link href="StyleSheet/Banner_Style.css" rel="stylesheet" />
     <script src="js/JavaScript.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
-
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $Cols: 1,
-                $Align: 0,
-                $NoDrag: true
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*responsive code begin*/
-            /*remove responsive code if you don't want the slider scales while window resizing*/
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            /*responsive code end*/
-        });
-    </script>
+    
     
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -71,20 +21,20 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/01.jpg" />
+                <img data-u="image" src="img/01.jpg" alt="nike boots" />
                 <div data-u="thumb">Nike</div>
-                <%--image taken from https://www.netolocker.net/--%>
+                <!--image taken from https://www.netolocker.net/-->
                 </div>
             <div>
           
-                <img data-u="image" src="img/02.jpg" />
+                <img data-u="image" src="img/02.jpg" alt="adidas boots" />
                 <div data-u="thumb">Adidas</div>
-                <%--image taken from https://www.netolocker.net/--%>
+                <!--image taken from https://www.netolocker.net/-->
             </div>
             <div>
-                <img data-u="image" src="img/03.jpg" />
+                <img data-u="image" src="img/03.jpg" alt="puma boots" />
                 <div data-u="thumb">Puma</div>
-                <%--image taken from https://www.unisportstore.com --%>
+                <!--image taken from https://www.unisportstore.com -->
             </div>
             
         </div>

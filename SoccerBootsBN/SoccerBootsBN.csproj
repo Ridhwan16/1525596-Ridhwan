@@ -73,10 +73,6 @@
     <Content Include="img\01.jpg" />
     <Content Include="img\02.jpg" />
     <Content Include="img\03.jpg" />
-    <Content Include="img\04.jpg" />
-    <Content Include="img\a17.png" />
-    <Content Include="img\banner1.jpg" />
-    <Content Include="img\homepage.jpg" />
     <Content Include="img\loading.gif" />
     <Content Include="img\SBBNBanner.jpg" />
     <Content Include="js\JavaScript.js" />
