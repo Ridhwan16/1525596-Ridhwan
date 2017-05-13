@@ -59,5 +59,70 @@
         <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
     </div>
     <!-- #endregion Jssor Slider End -->
+    <div id="homeproduct">
+    <table>
+        <Caption>Nike Products</Caption>
+        <tr>
+          <td><img src="img/productimage/nikehypervenom.jpg" alt=""/> 
+              <p>Nike Hypervenom</p> 
+              <p>$240</p>
+          </td>
+            <td><img src="img/productimage/nikehypervenom2.jpg" alt=""/> 
+              <p>Nike Hypervenom 2</p> 
+              <p>$270</p>
+          </td>
+            <td><img src="img/productimage/nikemecurial.jpg" alt=""/> 
+              <p>Nike Mecurial</p> 
+              <p>$250</p>
+          </td>
+          <td><img src="img/productimage/Niketiempo.jpg" alt=""/> 
+              <p>Nike Tiempo</p> 
+              <p>$230</p>
+          </td>
+        </tr>
+     </table>
+     <table>
+        <Caption>Adidas Products</Caption>
+        <tr>
+          <td><img src="img/productimage/adidasace.jpg" alt=""/> 
+              <p>Adidas ace</p> 
+              <p>$200</p>
+          </td>
+            <td><img src="img/productimage/adidasace151.jpg" alt=""/> 
+              <p>Adidas ace v151</p> 
+              <p>$245</p>
+          </td>
+            <td><img src="img/productimage/adidasadipure.jpg" alt=""/> 
+              <p>Adidas adi pure</p> 
+              <p>$230</p>
+          </td>
+          <td><img src="img/productimage/adidasdecathlon.jpg" alt=""/> 
+              <p>Adidas Decathlon</p> 
+              <p>$240</p>
+          </td>
+        </tr>
+     </table>
+        <table>
+        <Caption>Puma Products</Caption>
+        <tr>
+          <td><img src="img/productimage/pumaclassic.jpg" alt=""/> 
+              <p>Puma Classic</p> 
+              <p>$230</p>
+          </td>
+            <td><img src="img/productimage/pumaevopowervigor.jpg" alt=""/> 
+              <p>Puma Evopower Vigor 1</p> 
+              <p>$220</p>
+          </td>
+            <td><img src="img/productimage/pumaevospeed17.jpg" alt=""/> 
+              <p>Puma Evospeed 17</p> 
+              <p>$240</p>
+          </td>
+          <td><img src="img/productimage/pumaswanmoor.jpg" alt=""/> 
+              <p>Puma Swanmoor</p> 
+              <p>$250</p>
+          </td>
+        </tr>
+     </table>
+     </div>
 
 </asp:Content>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BootsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BootCart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="Price" Type="int" Nullable="false" />
+          <Property Name="DateBought" Type="datetime" />
+          <Property Name="InsideCart" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BootProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShoeType" Type="int" Nullable="false" />
+          <Property Name="ShoeName" Type="varchar" MaxLength="100" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Description" Type="text" />
+          <Property Name="Image" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="BootType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShoeName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_BootCart_BootProduct">
+          <End Role="BootProduct" Type="Self.BootProduct" Multiplicity="1" />
+          <End Role="BootCart" Type="Self.BootCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BootProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BootCart">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BootProduct_BootType">
+          <End Role="BootType" Type="Self.BootType" Multiplicity="1" />
+          <End Role="BootProduct" Type="Self.BootProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BootType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BootProduct">
+              <PropertyRef Name="ShoeType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BootsModelStoreContainer">
+          <EntitySet Name="BootCart" EntityType="Self.BootCart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BootProduct" EntityType="Self.BootProduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BootType" EntityType="Self.BootType" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_BootCart_BootProduct" Association="Self.FK_BootCart_BootProduct">
+            <End Role="BootProduct" EntitySet="BootProduct" />
+            <End Role="BootCart" EntitySet="BootCart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BootProduct_BootType" Association="Self.FK_BootProduct_BootType">
+            <End Role="BootType" EntitySet="BootType" />
+            <End Role="BootProduct" EntitySet="BootProduct" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BootsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BootCart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="Price" Type="Int32" Nullable="false" />
+          <Property Name="DateBought" Type="DateTime" Precision="3" />
+          <Property Name="InsideCart" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BootProduct" Relationship="Self.FK_BootCart_BootProduct" FromRole="BootCart" ToRole="BootProduct" />
+        </EntityType>
+        <EntityType Name="BootProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShoeType" Type="Int32" Nullable="false" />
+          <Property Name="ShoeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="BootCarts" Relationship="Self.FK_BootCart_BootProduct" FromRole="BootProduct" ToRole="BootCart" />
+          <NavigationProperty Name="BootType" Relationship="Self.FK_BootProduct_BootType" FromRole="BootProduct" ToRole="BootType" />
+        </EntityType>
+        <EntityType Name="BootType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShoeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="BootProducts" Relationship="Self.FK_BootProduct_BootType" FromRole="BootType" ToRole="BootProduct" />
+        </EntityType>
+        <Association Name="FK_BootCart_BootProduct">
+          <End Role="BootProduct" Type="Self.BootProduct" Multiplicity="1" />
+          <End Role="BootCart" Type="Self.BootCart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BootProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BootCart">
+              <PropertyRef Name="ProductID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BootProduct_BootType">
+          <End Role="BootType" Type="Self.BootType" Multiplicity="1" />
+          <End Role="BootProduct" Type="Self.BootProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BootType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BootProduct">
+              <PropertyRef Name="ShoeType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="db_1525596_co5027Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BootCarts" EntityType="Self.BootCart" />
+          <EntitySet Name="BootProducts" EntityType="Self.BootProduct" />
+          <EntitySet Name="BootTypes" EntityType="Self.BootType" />
+          <AssociationSet Name="FK_BootCart_BootProduct" Association="Self.FK_BootCart_BootProduct">
+            <End Role="BootProduct" EntitySet="BootProducts" />
+            <End Role="BootCart" EntitySet="BootCarts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BootProduct_BootType" Association="Self.FK_BootProduct_BootType">
+            <End Role="BootType" EntitySet="BootTypes" />
+            <End Role="BootProduct" EntitySet="BootProducts" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BootsModelStoreContainer" CdmEntityContainer="db_1525596_co5027Entities">
+          <EntitySetMapping Name="BootCarts">
+            <EntityTypeMapping TypeName="BootsModel.BootCart">
+              <MappingFragment StoreEntitySet="BootCart">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="DateBought" ColumnName="DateBought" />
+                <ScalarProperty Name="InsideCart" ColumnName="InsideCart" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BootProducts">
+            <EntityTypeMapping TypeName="BootsModel.BootProduct">
+              <MappingFragment StoreEntitySet="BootProduct">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ShoeType" ColumnName="ShoeType" />
+                <ScalarProperty Name="ShoeName" ColumnName="ShoeName" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BootTypes">
+            <EntityTypeMapping TypeName="BootsModel.BootType">
+              <MappingFragment StoreEntitySet="BootType">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ShoeName" ColumnName="ShoeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
