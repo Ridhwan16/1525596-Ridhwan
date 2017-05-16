@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Net.Mail;
-
+//source taken from https://www.youtube.com/watch?v=ngldKCSXA6U and https://www.youtube.com/watch?v=Fw1X7HLZfos-->
 namespace SoccerBootsBN
 {
     public partial class contact : System.Web.UI.Page

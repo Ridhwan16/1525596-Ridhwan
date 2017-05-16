@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="content1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <!--Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs-->
     <asp:Panel ID="ShopCartPanel" runat="server">
 
     </asp:Panel>

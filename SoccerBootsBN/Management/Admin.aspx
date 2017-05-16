@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="content1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <!--Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs-->
     <asp:LinkButton ID="LinkButton1" runat="server" CssClass="button" PostBackUrl="~/Management/ManageBootProduct.aspx">Add New Item</asp:LinkButton>
-<br />
+<hr />
 <asp:GridView ID="GridBoots" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="sdsBoots" Width="100%" OnRowEditing="GridBoots_RowEditing" CellPadding="4" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" />
     <Columns>
@@ -46,7 +47,7 @@
         <asp:Parameter Name="ID" Type="Int32" />
     </UpdateParameters>
 </asp:SqlDataSource>
-<br />
+<hr />
 <asp:LinkButton ID="LinkButton2" runat="server" CssClass="button" PostBackUrl="~/Management/ManageBootType.aspx">Add New Brand</asp:LinkButton>
 <br />
 <asp:GridView ID="GridBootsType" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="sdsBootsType" Width="50%" CellPadding="4" ForeColor="#333333" GridLines="None">

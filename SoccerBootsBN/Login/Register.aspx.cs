@@ -11,6 +11,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity.EntityFramework;
 using SoccerBootsBN.Models;
 using Microsoft.Owin.Security;
+//Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs
 
 namespace SoccerBootsBN.Login
 {

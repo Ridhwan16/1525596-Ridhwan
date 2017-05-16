@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="content1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <!--Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs-->
     <p>
         <asp:Literal ID="Status" runat="server"></asp:Literal>
     </p>
@@ -26,28 +27,25 @@
     <p>
         <asp:TextBox ID="FirstNameText" runat="server" CssClass="insert"></asp:TextBox>
     </p>
-    <p>
-        &nbsp;</p>
+    
     <p>
         Last Name :</p>
     <p>
         <asp:TextBox ID="LastNameText" runat="server" CssClass="insert"></asp:TextBox>
     </p>
-    <p>
-        &nbsp;</p>
+ 
     <p>
         Address :</p>
     <p>
         <asp:TextBox ID="AddressText" runat="server" CssClass="insert"></asp:TextBox>
     </p>
-    <p>
-        &nbsp;</p>
+   
     <p>
         Post Code :</p>
     <p>
         <asp:TextBox ID="PostCodeText" runat="server" CssClass="insert"></asp:TextBox>
     </p>
     <p>
-        <asp:Button ID="Button1" runat="server" CssClass="button" OnClick="Button1_Click" Text="Button" />
+        <asp:Button ID="Button1" runat="server" CssClass="button" OnClick="Button1_Click" Text="Register" />
     </p>
 </asp:Content>

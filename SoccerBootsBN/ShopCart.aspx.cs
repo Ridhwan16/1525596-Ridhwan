@@ -7,7 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+//Source taken from https://www.youtube.com/watch?v=sXS2lX7XdOs
 namespace SoccerBootsBN
 {
     public partial class ShopCart : System.Web.UI.Page
@@ -58,7 +58,7 @@ namespace SoccerBootsBN
                 //Create Delete button
                 LinkButton DeleteLink = new LinkButton
                 {
-                    PostBackUrl = string.Format("~ShopCart.aspx?ProductId={0}", cart.ID),
+                    PostBackUrl = string.Format("~/ShopCart.aspx?ProductId={0}", cart.ID),
                     Text = "Delete Item",
                     ID = "delete" + cart.ID
                 };

@@ -4,5 +4,5 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h2>Thank You</h2>
     <p>
-        Purchase has been completed</p>
+        Your purchase has been completed</p>
 </asp:Content>
