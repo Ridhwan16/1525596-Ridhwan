@@ -10,78 +10,87 @@
 namespace SoccerBootsBN {
     
     
-    public partial class Site {
+    public partial class Brands {
         
         /// <summary>
-        /// content1 control.
+        /// BootsImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder content1;
+        protected global::System.Web.UI.WebControls.Image BootsImage;
         
         /// <summary>
-        /// form1 control.
+        /// BootsTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label BootsTitle;
         
         /// <summary>
-        /// Image1 control.
+        /// BootsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Label BootsDescription;
         
         /// <summary>
-        /// registerlink control.
+        /// BootsPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink registerlink;
+        protected global::System.Web.UI.WebControls.Label BootsPrice;
         
         /// <summary>
-        /// status control.
+        /// AmountDropDown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink status;
+        protected global::System.Web.UI.WebControls.DropDownList AmountDropDown;
         
         /// <summary>
-        /// loginlink control.
+        /// buttonATC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink loginlink;
+        protected global::System.Web.UI.WebControls.Button buttonATC;
         
         /// <summary>
-        /// logoutlink control.
+        /// BootsResult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logoutlink;
+        protected global::System.Web.UI.WebControls.Label BootsResult;
         
         /// <summary>
-        /// ContentPlaceHolder2 control.
+        /// BootsID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.Label BootsID;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

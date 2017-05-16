@@ -10,6 +10,7 @@
         <EntityTypeShape EntityType="BootsModel.BootType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="BootsModel.FK_BootCart_BootProduct" ManuallyRouted="false" />
         <AssociationConnector Association="BootsModel.FK_BootProduct_BootType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BootsModel.CustomerInfo" Width="1.5" PointX="7.25" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

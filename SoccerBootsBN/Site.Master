@@ -22,17 +22,18 @@
         <div id="nav">
                 <ul>
                     <li><a href="../Default.aspx">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li class="brandDD">
-                        <a href="javascript:void(0)" class="buttonDD">Brands</a>
-                        <div class="brand-types">
-                            <a href="#">Nike</a>
-                            <a href="#">Addidas</a>
-                            <a href="#">Puma</a>
-                        </div>
-                    </li>
                     <li><a href="../Contact.aspx">Contact</a></li>
                     <li><a href="../Management/Admin.aspx">Admin</a></li>
+                    <li style="float:right">
+                        <asp:HyperLink ID="registerlink" runat="server" NavigateUrl="~/Login/Register.aspx">Register</asp:HyperLink>
+                        <asp:HyperLink ID="status" runat="server" NavigateUrl="~/ShopCart.aspx" />
+                        
+                    </li>
+                    <li style="float:right">
+                        <asp:HyperLink ID="loginlink" runat="server" NavigateUrl="~/Login/Login.aspx">Log In</asp:HyperLink>
+                        <asp:LinkButton ID="logoutlink" runat="server" OnClick="logoutlink_Click">Log Out</asp:LinkButton>
+                        
+                    </li>
                     
             </ul>
             </div>

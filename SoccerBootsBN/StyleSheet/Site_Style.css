@@ -78,3 +78,85 @@
     text-align:center;
     
 }
+
+#ContentPlaceHolder2_BootsPanel div
+{
+    float:left;
+    width:250px;
+    height:350px;
+    text-align: center;
+}
+
+.BootsImage{
+    width:250px;
+    height:250px;
+    vertical-align:central;
+    padding:10px;
+    border-radius:50px;
+}
+.ShoeName{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.ShoePrice{
+    font-family: Arial,halvetica,sans-serif;
+}
+
+.ImageDetails{
+    width:400px;
+    height:400px;
+    margin-right:20px;
+}
+
+.bootsDescription{
+    width:400px;
+    font-style:italic;
+}
+
+.bootsPrice{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.button{
+    padding:10px;
+    margin:10px;
+    border:0;
+    border-radius:4px;
+    clear:both;
+    background: linear-gradient(to bottom, Grey, lightgrey);
+}
+
+.insert{
+    border: 1px solid #CACACA;
+    margin: 0 0 25px;
+    padding: 5px 9px;
+    width:260px;
+}
+
+.insert:focus{
+    background:#FFF;
+    box-shadow:0 0 25px #CCC;
+}
+
+.cartTable{
+    text-align:center;
+    border: 15px solid #dcdad4;
+    margin-bottom:10px;
+    width:100px;
+    padding:10px;
+}
+
+.cartTable input{
+    width:65px;
+    height:65px;
+}
+
+.cartTable h4{
+    padding:0;
+    margin:0;
+}
+.cartTable tr td select{
+    width:100px;
+}

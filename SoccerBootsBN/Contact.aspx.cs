@@ -40,7 +40,7 @@ namespace SoccerBootsBN
                     SbmtGmailBtn.Enabled = false;
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 NotesLabel.ForeColor = System.Drawing.Color.Blue;
                 NotesLabel.ForeColor = System.Drawing.Color.Red;

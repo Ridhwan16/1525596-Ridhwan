@@ -15,7 +15,7 @@ namespace SoccerBootsBN.Models
                 db.BootProducts.Add(product);
                 db.SaveChanges();
 
-                return product.ShoeName + "Inserted Successfull";
+                return product.ShoeName + " Inserted Successfull";
             }
             catch (Exception e)
             {
@@ -37,7 +37,7 @@ namespace SoccerBootsBN.Models
                 p.Image = product.Image;
 
                 db.SaveChanges();
-                return product.ShoeName + "Updated Successfull";
+                return product.ShoeName + " Updated Successfull";
             }
             catch (Exception e)
             {

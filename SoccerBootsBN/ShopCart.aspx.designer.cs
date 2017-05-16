@@ -10,78 +10,60 @@
 namespace SoccerBootsBN {
     
     
-    public partial class Site {
+    public partial class ShopCart {
         
         /// <summary>
-        /// content1 control.
+        /// ShopCartPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder content1;
+        protected global::System.Web.UI.WebControls.Panel ShopCartPanel;
         
         /// <summary>
-        /// form1 control.
+        /// TotalLiteral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Literal TotalLiteral;
         
         /// <summary>
-        /// Image1 control.
+        /// TaxLiteral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Literal TaxLiteral;
         
         /// <summary>
-        /// registerlink control.
+        /// TotalPriceLiteral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink registerlink;
+        protected global::System.Web.UI.WebControls.Literal TotalPriceLiteral;
         
         /// <summary>
-        /// status control.
+        /// ContinueShop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink status;
+        protected global::System.Web.UI.WebControls.LinkButton ContinueShop;
         
         /// <summary>
-        /// loginlink control.
+        /// CekOutBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink loginlink;
-        
-        /// <summary>
-        /// logoutlink control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logoutlink;
-        
-        /// <summary>
-        /// ContentPlaceHolder2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.Button CekOutBtn;
     }
 }

@@ -28,5 +28,6 @@ namespace SoccerBootsBN
         public virtual DbSet<BootCart> BootCarts { get; set; }
         public virtual DbSet<BootProduct> BootProducts { get; set; }
         public virtual DbSet<BootType> BootTypes { get; set; }
+        public virtual DbSet<CustomerInfo> CustomerInfoes { get; set; }
     }
 }

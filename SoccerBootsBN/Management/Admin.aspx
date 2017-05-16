@@ -47,7 +47,7 @@
     </UpdateParameters>
 </asp:SqlDataSource>
 <br />
-<asp:LinkButton ID="LinkButton2" runat="server" CssClass="button" PostBackUrl="~/Management/ManageBootType.aspx">Add New Item Type</asp:LinkButton>
+<asp:LinkButton ID="LinkButton2" runat="server" CssClass="button" PostBackUrl="~/Management/ManageBootType.aspx">Add New Brand</asp:LinkButton>
 <br />
 <asp:GridView ID="GridBootsType" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="sdsBootsType" Width="50%" CellPadding="4" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" />

@@ -15,7 +15,7 @@ namespace SoccerBootsBN.Models
                 db.BootTypes.Add(bootType);
                 db.SaveChanges();
 
-                return bootType.ShoeName + "Inserted Successfull";
+                return bootType.ShoeName + " Inserted Successfull";
             }
             catch (Exception e)
             {
@@ -33,7 +33,7 @@ namespace SoccerBootsBN.Models
                 p.ShoeName = bootType.ShoeName;
                 
                 db.SaveChanges();
-                return bootType.ShoeName + "Updated Successfull";
+                return bootType.ShoeName + " Updated Successfull";
             }
             catch (Exception e)
             {
@@ -51,7 +51,7 @@ namespace SoccerBootsBN.Models
                 db.BootTypes.Remove(bootType);
                 db.SaveChanges();
 
-                return bootType.ShoeName + "Deleted Successfull";
+                return bootType.ShoeName + " Deleted Successfull";
 
             }
             catch (Exception e)

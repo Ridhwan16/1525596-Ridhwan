@@ -7,81 +7,90 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SoccerBootsBN {
+namespace SoccerBootsBN.Login {
     
     
-    public partial class Site {
+    public partial class Register {
         
         /// <summary>
-        /// content1 control.
+        /// Status control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder content1;
+        protected global::System.Web.UI.WebControls.Literal Status;
         
         /// <summary>
-        /// form1 control.
+        /// UserNameText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox UserNameText;
         
         /// <summary>
-        /// Image1 control.
+        /// PasswordText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox PasswordText;
         
         /// <summary>
-        /// registerlink control.
+        /// ConfirmPasswordText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink registerlink;
+        protected global::System.Web.UI.WebControls.TextBox ConfirmPasswordText;
         
         /// <summary>
-        /// status control.
+        /// FirstNameText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink status;
+        protected global::System.Web.UI.WebControls.TextBox FirstNameText;
         
         /// <summary>
-        /// loginlink control.
+        /// LastNameText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink loginlink;
+        protected global::System.Web.UI.WebControls.TextBox LastNameText;
         
         /// <summary>
-        /// logoutlink control.
+        /// AddressText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logoutlink;
+        protected global::System.Web.UI.WebControls.TextBox AddressText;
         
         /// <summary>
-        /// ContentPlaceHolder2 control.
+        /// PostCodeText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.TextBox PostCodeText;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
