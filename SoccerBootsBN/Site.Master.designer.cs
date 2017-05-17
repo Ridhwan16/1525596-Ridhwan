@@ -40,6 +40,33 @@ namespace SoccerBootsBN {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
+        /// homelink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink homelink;
+        
+        /// <summary>
+        /// contactlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink contactlink;
+        
+        /// <summary>
+        /// adminlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink adminlink;
+        
+        /// <summary>
         /// registerlink control.
         /// </summary>
         /// <remarks>

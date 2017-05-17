@@ -21,9 +21,15 @@
           
         <div id="nav">
                 <ul>
-                    <li><a href="../Default.aspx">Home</a></li>
-                    <li><a href="../Contact.aspx">Contact</a></li>
-                    <li><a href="../Management/Admin.aspx">Admin</a></li>
+                    <li>
+                        <asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                    </li>
+                    <li
+                        <asp:HyperLink ID="contactlink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="adminlink" runat="server" NavigateUrl="~/Management/Admin.aspx">Admin</asp:HyperLink>
+                    </li>
                     <li style="float:right">
                         <asp:HyperLink ID="registerlink" runat="server" NavigateUrl="~/Login/Register.aspx">Register</asp:HyperLink>
                         <asp:HyperLink ID="status" runat="server" NavigateUrl="~/ShopCart.aspx" />
