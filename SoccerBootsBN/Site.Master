@@ -24,7 +24,7 @@
                     <li>
                         <asp:HyperLink ID="homelink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
                     </li>
-                    <li
+                    <li>
                         <asp:HyperLink ID="contactlink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
                     </li>
                     <li>
